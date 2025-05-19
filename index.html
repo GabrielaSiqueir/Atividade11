@@ -4,32 +4,39 @@
   <meta charset="UTF-8">
   <title>Gerenciador de Alunos</title>
   <link rel="stylesheet" href="CSS/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Cadastro de Alunos</h1>
+  <div class="container">
+    <header>
+      <h1>Cadastro de Alunos</h1>
+    </header>
 
-  <form id="form-aluno">
-    <input type="text" id="nome" placeholder="Nome" required />
-    <input type="text" id="curso" placeholder="Curso" required />
-    <input type="email" id="email" placeholder="Email" required />
-    <button type="submit">Cadastrar</button>
-  </form>
+    <form id="form-aluno">
+      <input type="text" id="nome" placeholder="Nome" required />
+      <input type="text" id="curso" placeholder="Curso" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <button type="submit">Cadastrar</button>
+    </form>
 
-  <h2>Lista de Alunos</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Nome</th>
-        <th>Curso</th>
-        <th>Email</th>
-        <th>Ações</th>
-      </tr>
-    </thead>
-    <tbody id="tabela-alunos">
-      <!-- Linhas dinâmicas -->
-    </tbody>
-  </table>
+    <section class="table-container">
+      <h2>Lista de Alunos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Curso</th>
+            <th>Email</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-alunos">
+          <!-- Linhas dinâmicas -->
+        </tbody>
+      </table>
+    </section>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
